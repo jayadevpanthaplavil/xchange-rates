@@ -4,6 +4,7 @@
   "description": "A lightweight Node.js package to get real-time currency exchange rates for any base currency using a pivot currency, fetched directly from a CDN for fast and reliable access.",
   "main": "index.js",
   "scripts": {
+    "update": "node scripts/updateRates.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jayadev Panthaplavil",
