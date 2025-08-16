@@ -12,7 +12,7 @@ export async function xchangerate(baseCurrency, targetCurrency, useCDN = false) 
   let data;
 
   if (useCDN) {
-    const res = await fetch('https://cdn.jsdelivr.net/npm/@jayadevpanthaplavil/xchange-rates@latest/v1/currencies.json');
+    const res = await fetch('https://cdn.jsdelivr.net/npm/xchange-rates@latest/v1/currencies.json');
     data = await res.json();
   } else {
     if (!localRates) throw new Error('Local JSON not available');
