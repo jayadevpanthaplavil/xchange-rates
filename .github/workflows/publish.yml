@@ -34,7 +34,12 @@ jobs:
       # 5. Generate date-based version
       - name: Set date-based version
         id: version
-        run: echo "VERSION=$(node scripts/semver-date.js)" >> "$GITHUB_ENV"
+        run: |
+          VERSION=$(node scripts/semver-date.js)
+          # convert dots to dashes for npm tag
+          TAG=$(echo $VERSION | tr '.' '-')
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
 
       # 6. Bump package.json version without git tag
       - name: Bump version
@@ -58,7 +63,7 @@ jobs:
 
       # 9. Add date-based npm tag
       - name: Add npm date tag
-        run: npm dist-tag add xchange-rates@${{ env.VERSION }} ${{ env.VERSION }}
+        run: npm dist-tag add xchange-rates@${{ env.VERSION }} ${{ env.TAG }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
