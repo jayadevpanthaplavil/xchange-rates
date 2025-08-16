@@ -64,4 +64,4 @@ jobs:
 
       # 10. Success message
       - name: Success
-        run: echo "Exchange rates published successfully! Version: ${{ env.VERSION }}"
+        run: echo "Exchange rates published successfully! Version ${{ env.VERSION }}"
