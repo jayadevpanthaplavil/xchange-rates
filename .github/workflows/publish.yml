@@ -34,7 +34,7 @@ jobs:
       # 5. Generate date-based version
       - name: Set date-based version
         id: version
-        run: echo "VERSION=$(node semver-date.js)" >> "$GITHUB_ENV"
+        run: echo "VERSION=$(node scripts/semver-date.js)" >> "$GITHUB_ENV"
 
       # 6. Bump package.json version without git tag
       - name: Bump version
