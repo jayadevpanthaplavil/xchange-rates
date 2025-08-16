@@ -1,9 +1,8 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
-const dotenv = require('dotenv');
-const { format } = require('date-fns');
-const path = require('path');
-
+import fs from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
+import dotenv from 'dotenv';
+import { format } from 'date-fns';
 
 dotenv.config();
 

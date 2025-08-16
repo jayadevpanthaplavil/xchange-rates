@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const fetch = require('node-fetch');
+import fs from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
 
 const localPath = path.resolve('./v1/currencies.json');
 let localRates = fs.existsSync(localPath) ? JSON.parse(fs.readFileSync(localPath, 'utf-8')) : null;
