@@ -1,0 +1,36 @@
+name: Publish Exchange Rates
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update exchange rates
+        run: npm run update
+        env:
+          XCR_KEY1: ${{ secrets.XCR_KEY1 }}
+          XCR_URL1: ${{ secrets.XCR_URL1 }}
+
+      - name: Package and publish to npm
+        run: |
+          mkdir package
+          cp -r package.json index.js v1 package/
+          cd package
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
