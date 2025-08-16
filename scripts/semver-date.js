@@ -8,7 +8,12 @@ import fetch from 'node-fetch';
 
 async function generateVersion() {
   const today = new Date();
-  const baseVersion = `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}`;
+  const year = today.getFullYear();
+  const month = today.getMonth() + 1; // 1–12
+  const day = today.getDate();        // 1–31
+
+  // Ensure no leading zeros
+  const baseVersion = `${year}.${month}.${day}`;
 
   try {
     const res = await fetch('https://registry.npmjs.org/xchange-rates');
@@ -21,16 +26,15 @@ async function generateVersion() {
     let finalVersion = baseVersion;
     let patch = 0;
 
-    // if date already exists anywhere (versions or time), bump patch
     while (allVersions.has(finalVersion)) {
       patch += 1;
-      finalVersion = `${baseVersion}.${patch}`; // → 2025.8.16.1, 2025.8.16.2, etc.
+      finalVersion = `${baseVersion}.${patch}`;
     }
 
-    console.log(finalVersion); // stdout → version string
+    console.log(finalVersion);
   } catch (err) {
     console.error("Error fetching registry:", err);
-    console.log(baseVersion); // fallback to base
+    console.log(baseVersion);
   }
 }
 
