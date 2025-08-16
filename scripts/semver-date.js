@@ -28,7 +28,7 @@ async function generateVersion() {
 
     while (allVersions.has(finalVersion)) {
       patch += 1;
-      finalVersion = `${baseVersion}.${patch}`;
+      finalVersion = `${baseVersion}-${patch}`;
     }
 
     console.log(finalVersion);
