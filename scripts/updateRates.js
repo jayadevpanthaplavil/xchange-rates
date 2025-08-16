@@ -8,7 +8,7 @@ dotenv.config();
 
 const KEY = process.env.XCR_KEY1;
 const URL = process.env.XCR_URL1;
-const API_URL = `${URL}${APP_ID}`;
+const API_URL = `${URL}${KEY}`;
 const outputDir = path.resolve('./v1');
 const outputFile = path.join(outputDir, 'currencies.json');
 
