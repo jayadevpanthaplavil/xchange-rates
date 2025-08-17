@@ -40,10 +40,7 @@ jobs:
       # 6. Prepare package
       - name: Prepare package
         run: |
-          rm -rf package
-          mkdir package
-          cp -r package.json index.js v1 package/
-          ls -la package  # debug to verify files
+          rsync -av --progress ./ ./package --exclude package
 
       # 7. Publish to npm
       - name: Publish to npm
