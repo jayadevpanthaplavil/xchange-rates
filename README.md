@@ -9,21 +9,21 @@ Exchange rate data is updated daily and served directly via **CDN** for **fast a
 
 ---
 
-☕ *This package runs on caffeine. If it helped you, consider buying me a coffee.*
+☕ _This package runs on caffeine. If it helped you, consider buying me a coffee._
 
 <a href="https://www.buymeacoffee.com/jayadevpanthaplavil" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height:40px;width:auto;">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height:70px;width:auto;">
 </a>
 
 ---
 
 ## ✨ Features
 
-* Fetch live exchange rates between **any two supported currencies**
-* Data refreshed **daily** via CDN
-* Works both as **Node.js library** and **CLI tool**
-* Simple, lightweight, no API key required 🚀
-* Unlimited data fetches
+- Fetch live exchange rates between **any two supported currencies**
+- Data refreshed **daily** via CDN
+- Works both as **Node.js library** and **CLI tool**
+- Simple, lightweight, no API key required 🚀
+- Unlimited data fetches
 
 ---
 
@@ -88,78 +88,77 @@ xchangerate USD INR
 
 ## 🌍 Supported Currencies
 
-This package supports **~180 currency codes** including **official national currencies, regional currencies, financial instruments, precious metals, and cryptocurrencies**.  
+This package supports **~180 currency codes** including **official national currencies, regional currencies, financial instruments, precious metals, and cryptocurrencies**.
 
-## 📊 At a Glance  
+## 📊 At a Glance
 
-- **🌐 Total codes listed:** ~180  
-- **🏳️ Country & territory currencies:** ~150  
-- **🤝 Regional/shared currencies:** 5+  
-- **💰 Precious metals / commodities:** 3 (Gold, Silver, etc.)  
-- **₿ Cryptocurrencies:** 1 (Bitcoin)  
-- **🏦 Supranational / financial instruments:** 1 (IMF SDR)  
-- **📜 Obsolete / replaced codes:** 5+  
-
-
----
-
-## 🏳️ National & Territory Currencies  
-
-Most of the list are official national or territory currencies. Examples:  
-
-- **USD** – United States Dollar 🇺🇸  
-- **INR** – Indian Rupee 🇮🇳  
-- **JPY** – Japanese Yen 🇯🇵  
-- **GBP** – British Pound Sterling 🇬🇧  
-- **AUD** – Australian Dollar 🇦🇺  
-- **CAD** – Canadian Dollar 🇨🇦  
-- …and 140+ more, including currencies of smaller nations and overseas territories (e.g., **AWG** – Aruban Florin, **FKP** – Falkland Islands Pound).  
+- **🌐 Total codes listed:** ~180
+- **🏳️ Country & territory currencies:** ~150
+- **🤝 Regional/shared currencies:** 5+
+- **💰 Precious metals / commodities:** 3 (Gold, Silver, etc.)
+- **₿ Cryptocurrencies:** 1 (Bitcoin)
+- **🏦 Supranational / financial instruments:** 1 (IMF SDR)
+- **📜 Obsolete / replaced codes:** 5+
 
 ---
 
-## 🤝 Regional / Shared Currencies  
+## 🏳️ National & Territory Currencies
 
-- **EUR** – Euro (27 EU countries and territories) 🇪🇺  
-- **XAF** – CFA Franc BEAC (Central Africa)  
-- **XOF** – CFA Franc BCEAO (West Africa)  
-- **XPF** – CFP Franc (French overseas territories)  
-- **XCD** – East Caribbean Dollar  
+Most of the list are official national or territory currencies. Examples:
 
----
-
-## 💰 Precious Metals / Commodities  
-
-- **XAU** – Gold (troy ounce)  
-- **XAG** – Silver (troy ounce)  
-- **XDR** – IMF Special Drawing Rights (supranational reserve asset)  
+- **USD** – United States Dollar 🇺🇸
+- **INR** – Indian Rupee 🇮🇳
+- **JPY** – Japanese Yen 🇯🇵
+- **GBP** – British Pound Sterling 🇬🇧
+- **AUD** – Australian Dollar 🇦🇺
+- **CAD** – Canadian Dollar 🇨🇦
+- …and 140+ more, including currencies of smaller nations and overseas territories (e.g., **AWG** – Aruban Florin, **FKP** – Falkland Islands Pound).
 
 ---
 
-## ₿ Cryptocurrency  
+## 🤝 Regional / Shared Currencies
 
-- **BTC** – Bitcoin  
-
----
-
-## 📜 Obsolete / Replaced  
-
-Some codes are obsolete or updated:  
-
-- **BYR** – Old Belarusian Ruble → replaced by **BYN**  
-- **STD** – Old São Tomé and Príncipe Dobra → replaced by **STN**  
-- **ZMK** – Old Zambian Kwacha → replaced by **ZMW**  
-- **SLL** – Old Sierra Leonean Leone → replaced by **SLE**  
-- **PEN** – Nuevo Sol → now **Sol**, still uses PEN  
+- **EUR** – Euro (27 EU countries and territories) 🇪🇺
+- **XAF** – CFA Franc BEAC (Central Africa)
+- **XOF** – CFA Franc BCEAO (West Africa)
+- **XPF** – CFP Franc (French overseas territories)
+- **XCD** – East Caribbean Dollar
 
 ---
 
-## 📖 Standard Reference  
+## 💰 Precious Metals / Commodities
 
-All codes follow **ISO 4217**:  
+- **XAU** – Gold (troy ounce)
+- **XAG** – Silver (troy ounce)
+- **XDR** – IMF Special Drawing Rights (supranational reserve asset)
 
-- 3-letter codes (e.g., **USD, INR, EUR**).  
-- The first two letters usually represent the country (per ISO 3166), and the third the currency (e.g., **IN** + **R** = INR).  
-- Codes beginning with **X** are reserved for **non-sovereign currencies, precious metals, supranational assets, or crypto**.  
+---
+
+## ₿ Cryptocurrency
+
+- **BTC** – Bitcoin
+
+---
+
+## 📜 Obsolete / Replaced
+
+Some codes are obsolete or updated:
+
+- **BYR** – Old Belarusian Ruble → replaced by **BYN**
+- **STD** – Old São Tomé and Príncipe Dobra → replaced by **STN**
+- **ZMK** – Old Zambian Kwacha → replaced by **ZMW**
+- **SLL** – Old Sierra Leonean Leone → replaced by **SLE**
+- **PEN** – Nuevo Sol → now **Sol**, still uses PEN
+
+---
+
+## 📖 Standard Reference
+
+All codes follow **ISO 4217**:
+
+- 3-letter codes (e.g., **USD, INR, EUR**).
+- The first two letters usually represent the country (per ISO 3166), and the third the currency (e.g., **IN** + **R** = INR).
+- Codes beginning with **X** are reserved for **non-sovereign currencies, precious metals, supranational assets, or crypto**.
 
 ---
 
@@ -332,7 +331,7 @@ All codes follow **ISO 4217**:
 **YER** – Yemeni Rial  
 **ZAR** – South African Rand  
 **ZMK / ZMW** – Zambian Kwacha  
-**ZWL** – Zimbabwean Dollar  
+**ZWL** – Zimbabwean Dollar
 
 </details>
 
