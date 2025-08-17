@@ -53,7 +53,7 @@ jobs:
         run: |
           rm -rf package
           mkdir package
-          cp -r package.json index.js v1 bin package/
+          cp -r package.json index.js v1 bin README.md package/
           ls -la package  # debug to verify files
 
       # 8. Publish to npm

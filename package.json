@@ -11,6 +11,24 @@
     "update": "node scripts/updateRates.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "exchange",
+    "currency",
+    "currency-converter",
+    "forex",
+    "fx",
+    "exchange-rate",
+    "money",
+    "finance",
+    "international",
+    "currency-rates",
+    "forex-rates",
+    "financial-api",
+    "exchange-api",
+    "fx-rates",
+    "real-time",
+    "currency-conversion"
+  ],
   "author": "Jayadev Panthaplavil",
   "license": "ISC",
   "dependencies": {
