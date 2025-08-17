@@ -11,9 +11,9 @@ Exchange rate data is updated daily and served directly via **CDN** for **fast a
 
 ☕ *This package runs on caffeine. If it helped you, consider buying me a coffee.*
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/jayadevpanthaplavil)
-
-[![Buy Me A Coffee](https://media.giphy.com/media/kmIZ4lx2ZHpr5jY0W4/giphy.gif)](https://www.buymeacoffee.com/jayadevpanthaplavil)
+<a href="https://www.buymeacoffee.com/jayadevpanthaplavil" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height:40px;width:auto;">
+</a>
 
 ---
 
