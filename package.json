@@ -30,6 +30,13 @@
     "currency-conversion"
   ],
   "author": "Jayadev Panthaplavil",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayadevpanthaplavil/xchange-rates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jayadevpanthaplavil/xchange-rates/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "date-fns": "^4.1.0",
