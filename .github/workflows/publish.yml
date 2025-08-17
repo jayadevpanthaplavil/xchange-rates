@@ -1,10 +1,13 @@
 name: Publish Exchange Rates
 
-# Triggers: daily cron + manual trigger
+# Triggers: daily cron + manual trigger + main branch update
 on:
   schedule:
     - cron: '0 0 * * *' # daily at midnight UTC
   workflow_dispatch:
+  push:
+    branches:
+      - main # run when main branch is pushed
 
 jobs:
   update:
@@ -50,7 +53,7 @@ jobs:
         run: |
           rm -rf package
           mkdir package
-          cp -r package.json index.js v1 package/
+          cp -r package.json index.js v1 bin package/
           ls -la package  # debug to verify files
 
       # 8. Publish to npm
