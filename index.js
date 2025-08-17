@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 const localPath = path.resolve('./v1/currencies.json');
 let localRates = fs.existsSync(localPath) ? JSON.parse(fs.readFileSync(localPath, 'utf-8')) : null;
 
-export async function xchangerate(baseCurrency, targetCurrency, useCDN = false) {
+export async function xchangerate(baseCurrency, targetCurrency, useCDN = true) {
   baseCurrency = baseCurrency.toUpperCase();
   targetCurrency = targetCurrency.toUpperCase();
 
