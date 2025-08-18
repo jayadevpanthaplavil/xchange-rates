@@ -73,3 +73,10 @@ jobs:
       # 10. Success message
       - name: Success
         run: echo "Exchange rates published successfully! Version ${{ env.VERSION }}"
+
+      # 11. Purge CDN cache
+      - name: Purge jsDelivr CDN Cache
+        uses: egad13/purge-jsdelivr-cache@v1
+        with:
+          url: 'https://cdn.jsdelivr.net/npm/xchange-rates@latest/v1/currencies.json'
+
