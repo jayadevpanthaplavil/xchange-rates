@@ -1,0 +1,25 @@
+name: Keep Workflow Alive
+on:
+  schedule:
+    - cron: '0 0 */50 * *' # every 50 days
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Keep alive
+        run: |
+          echo "Last keepalive: $(date)" > .github/keepalive.txt
+          
+      - name: Commit keepalive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/keepalive.txt
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore(ci): keepalive $(date +%Y-%m-%d)"
+          git push
